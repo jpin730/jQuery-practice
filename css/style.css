@@ -71,7 +71,9 @@ body {
   margin-bottom: 3em !important;
 }
 
-.bx-viewport {
+.bx-viewport,
+.bxslider,
+.bxslider > div {
   height: 100% !important;
 }
 

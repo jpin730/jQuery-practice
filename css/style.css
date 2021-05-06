@@ -1,0 +1,193 @@
+:root {
+  font-size: 16px;
+  --green: #235e3d;
+  --white: #ffffff;
+  --light: #cccccc;
+  --gray: #808080;
+  --dark: #333333;
+  --black-alpha: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--dark);
+  font-family: 'Roboto', sans-serif;
+  background-image: url('/img/leaves-green.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 65%;
+  margin: 2em auto 0;
+  background-color: var(--white);
+  padding: 1.5em;
+  box-shadow: 0 0 2px var(--black-alpha);
+}
+
+.logo {
+  padding: 0.5em 0;
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  max-width: 12em;
+  margin-bottom: 0.75em;
+}
+
+.menu {
+  background-color: var(--dark);
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.menu li {
+  height: 3em;
+  line-height: 3em;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 1.25em;
+  transition: background-color 300ms;
+}
+
+.menu a:hover {
+  background-color: var(--green);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 2em;
+}
+
+.post {
+  padding: 0.5em;
+  border: 1px solid var(--light);
+  margin-bottom: 1em;
+}
+
+.post h2 {
+  font-size: 2rem;
+  margin-bottom: 0.25em;
+}
+
+.post small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--gray);
+  margin-bottom: 1em;
+}
+
+.post p {
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+  text-align: justify;
+}
+
+.post a {
+  display: inline-block;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0.75em 1em;
+  background-color: var(--light);
+  color: var(--dark);
+  text-decoration: none;
+  transition: background-color 300ms, color 300ms;
+}
+
+.post a:hover {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+.whoami {
+  margin-bottom: 2em;
+}
+
+.whoami h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  background: url(/img/lines.png) repeat-x;
+  background-position: center;
+}
+
+.whoami h2 span {
+  padding: 0 0.5em;
+  background-color: var(--white);
+}
+
+.whoami img {
+  display: block;
+  width: 100%;
+  margin: 0 auto 1em;
+}
+
+.whoami p {
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+.login h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.login label {
+  font-size: 0.95rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25em;
+}
+
+.login input {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid var(--light);
+  margin-bottom: 1em;
+  outline: none;
+}
+
+.login input:focus {
+  border: 1px solid var(--green);
+}
+
+.login button {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0.75em 0;
+  border: none;
+  background-color: var(--green);
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.login button:hover {
+  background-color: var(--dark);
+}
+
+.footer {
+  width: 65%;
+  margin: 1em auto;
+  background-color: var(--black-alpha);
+  color: var(--light);
+  text-align: center;
+  padding: 1em 0;
+}

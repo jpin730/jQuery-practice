@@ -66,6 +66,15 @@ body {
   background-color: var(--green);
 }
 
+.bx-wrapper {
+  height: 16em !important;
+  margin-bottom: 3em !important;
+}
+
+.bx-viewport {
+  height: 100% !important;
+}
+
 .content {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);

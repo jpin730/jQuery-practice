@@ -24,6 +24,7 @@ body {
 
 .container {
   width: 65%;
+  min-width: 900px;
   margin: 2em auto 0;
   background-color: var(--white);
   padding: 1.5em;
@@ -196,9 +197,52 @@ body {
 
 .footer {
   width: 65%;
+  min-width: 1000px;
   margin: 1em auto;
   background-color: var(--black-alpha);
   color: var(--light);
   text-align: center;
   padding: 1em 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .container,
+  .footer {
+    min-width: 700px;
+  }
+
+  .content {
+    column-gap: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .footer {
+    width: calc(100% - 6em);
+    min-width: 300px;
+  }
+
+  .logo {
+    max-width: initial;
+  }
+
+  .menu li {
+    display: block;
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+    border-bottom: 1px solid var(--white);
+  }
+
+  .content {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container,
+  .footer {
+    width: calc(100% - 2em);
+  }
 }

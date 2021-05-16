@@ -1,0 +1,7 @@
+:root {
+  --main: #1f87c4;
+}
+
+body {
+  background-image: url('../img/sky.jpg');
+}

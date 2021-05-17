@@ -244,6 +244,7 @@ body {
 }
 
 .go-to-top {
+  display: none;
   background-color: var(--main-alpha);
   background-image: url('../img/arrow-up.svg');
   background-size: 0.5em;

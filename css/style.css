@@ -209,8 +209,8 @@ body {
 .theme-selector {
   position: fixed;
   top: 40%;
-  width: 3em;
-  height: 8em;
+  width: 4em;
+  height: 10em;
   background: var(--black-alpha);
   display: flex;
   flex-direction: column;
@@ -219,14 +219,16 @@ body {
 }
 
 .theme-selector div {
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   border: 1px solid var(--white);
   cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 300ms;
 }
 
 .theme-selector div:hover {
-  border-width: 2px;
+  opacity: 1;
 }
 
 .theme-selector .to-red {
@@ -239,6 +241,28 @@ body {
 
 .theme-selector .to-blue {
   background: var(--blue);
+}
+
+.go-to-top {
+  background-color: var(--main-alpha);
+  background-image: url('../img/arrow-up.svg');
+  background-size: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white);
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.go-to-top:hover {
+  background-color: var(--main);
 }
 
 @media screen and (max-width: 1024px) {

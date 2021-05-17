@@ -44,7 +44,7 @@ const posts = [
 
 const divPosts = $('div.posts');
 
-posts.forEach((post) => {
+posts.forEach(function (post) {
   const template = `
     <article class="post">
       <h2>${post.title}</h2>
@@ -60,6 +60,26 @@ posts.forEach((post) => {
 
 const theme = $('#theme');
 
-$('.to-red').click(() => theme.attr('href', 'css/red.css'));
-$('.to-green').click(() => theme.attr('href', 'css/green.css'));
-$('.to-blue').click(() => theme.attr('href', 'css/blue.css'));
+$('.to-red').click(function () {
+  theme.attr('href', 'css/red.css');
+});
+$('.to-green').click(function () {
+  theme.attr('href', 'css/green.css');
+});
+$('.to-blue').click(function () {
+  theme.attr('href', 'css/blue.css');
+});
+
+const goToTop = $('.go-to-top');
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    goToTop.fadeIn();
+  } else {
+    goToTop.fadeOut();
+  }
+});
+
+goToTop.click(function () {
+  $('html, body').animate({ scrollTop: 0 });
+});

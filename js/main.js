@@ -83,3 +83,20 @@ $(window).scroll(function () {
 goToTop.click(function () {
   $('html, body').animate({ scrollTop: 0 });
 });
+
+const whoamiParr = $('.whoami p');
+const usernameInput = $('#username');
+$('.login form').submit(function (event) {
+  event.preventDefault();
+  const username = usernameInput.val().trim();
+  let message;
+
+  if (username.length > 0) {
+    message = 'Welcome ' + username;
+  } else {
+    message = 'Please login';
+  }
+
+  usernameInput.val('');
+  whoamiParr.html(message).css('textAlign', 'center');
+});

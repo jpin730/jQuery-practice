@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/green.css" id="theme" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo"><h1>jQuery</h1></div>
+
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Clock</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="bxslider">
+        <div>
+          <img src="img/leaves-red.jpg" title="Red leaves" />
+        </div>
+        <div>
+          <img src="img/leaves-green.jpg" title="Green leaves" />
+        </div>
+        <div>
+          <img src="img/sky.jpg" title="Happy sky" />
+        </div>
+      </div>
+
+      <section class="content">
+        <div class="posts"></div>
+
+        <aside class="sidebar">
+          <div class="whoami">
+            <h2><span>Who am I?</span></h2>
+            <img src="img/snail.jpg" alt="snail" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+              dolor temporibus consequatur aperiam! Possimus, quas, repellat
+              quae tempora minima officiis sapiente ut, blanditiis nostrum
+              repellendus tenetur deserunt excepturi deleniti hic!
+            </p>
+          </div>
+
+          <div class="login">
+            <h2><span>Log in</span></h2>
+            <form>
+              <label for="username">Username</label>
+              <input type="text" id="username" />
+
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+
+              <button type="submit">Log in</button>
+            </form>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <footer class="footer">jQuery &copy; Jaime Pineda</footer>
+
+    <div class="theme-selector">
+      <div class="to-red" title="Change theme to red"></div>
+      <div class="to-green" title="Change theme to green"></div>
+      <div class="to-blue" title="Change theme to blue"></div>
+    </div>
+
+    <div class="go-to-top" title="Go to top"></div>
+  </body>
+</html>

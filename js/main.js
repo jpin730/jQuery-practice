@@ -1,6 +1,6 @@
 'use strict';
 
-if (window.location.href.includes('index')) {
+if (!window.location.href.includes('about')) {
   $(document).ready(function () {
     $('.bxslider').bxSlider({
       mode: 'fade',

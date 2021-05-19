@@ -4,22 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>jQuery</title>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="css/green.css" id="theme" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
@@ -36,28 +42,50 @@
 
         <nav>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Clock</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <div class="bxslider">
-        <div>
-          <img src="img/leaves-red.jpg" title="Red leaves" />
-        </div>
-        <div>
-          <img src="img/leaves-green.jpg" title="Green leaves" />
-        </div>
-        <div>
-          <img src="img/sky.jpg" title="Happy sky" />
-        </div>
-      </div>
-
       <section class="content">
-        <div class="posts"></div>
+        <div class="accordion-container">
+          <h2>About</h2>
+
+          <div class="accordion">
+            <h3>About us</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque voluptatibus magnam ullam commodi blanditiis
+                explicabo, repellat aliquam quidem maiores accusantium. Facere,
+                molestias quas laborum rem ducimus eum dicta quaerat vitae?
+              </p>
+            </div>
+
+            <h3>Our services</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque voluptatibus magnam ullam commodi blanditiis
+                explicabo, repellat aliquam quidem maiores accusantium. Facere,
+                molestias quas laborum rem ducimus eum dicta quaerat vitae?
+              </p>
+            </div>
+
+            <h3>Our customers</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque voluptatibus magnam ullam commodi blanditiis
+                explicabo, repellat aliquam quidem maiores accusantium. Facere,
+                molestias quas laborum rem ducimus eum dicta quaerat vitae?
+              </p>
+            </div>
+          </div>
+        </div>
 
         <aside class="sidebar">
           <div class="whoami">

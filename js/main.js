@@ -115,7 +115,7 @@ if (window.location.href.includes('about.html')) {
 
 if (window.location.href.includes('clock.html')) {
   setInterval(function () {
-    const time = moment().format('hh:mm:ss');
+    const time = moment().format('hh:mm:ss A');
     $('.clock').html(time);
   }, 1000);
 }

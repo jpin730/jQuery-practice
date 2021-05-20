@@ -1,7 +1,9 @@
 'use strict';
 
 if (!window.location.href.includes('.html')) {
-  window.location.href = './index.html';
+  window.location.href = window.location.href.includes('jpin730.github.io')
+    ? '/jQuery-practices/index.html'
+    : '/index.html';
 }
 
 if (window.location.href.includes('index.html')) {

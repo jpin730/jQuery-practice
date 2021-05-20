@@ -112,3 +112,10 @@ $('.login form').submit(function (event) {
 if (window.location.href.includes('about.html')) {
   $('.accordion').accordion();
 }
+
+if (window.location.href.includes('clock.html')) {
+  setInterval(function () {
+    const time = moment().format('hh:mm:ss');
+    $('.clock').html(time);
+  }, 1000);
+}

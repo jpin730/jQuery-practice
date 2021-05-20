@@ -266,8 +266,24 @@ body {
   background-color: var(--main);
 }
 
+.accordion-container {
+  margin-bottom: 2em;
+}
+
 .accordion-container > h2 {
   margin-bottom: 0.55em;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  margin: 0.5em 0 0.75em;
+  font-size: 4rem;
+  color: var(--gray);
 }
 
 @media screen and (max-width: 1024px) {

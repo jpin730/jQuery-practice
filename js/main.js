@@ -1,7 +1,7 @@
 'use strict';
 
 if (!window.location.href.includes('.html')) {
-  window.location.href = '/index.html';
+  window.location.href = './index.html';
 }
 
 if (window.location.href.includes('index.html')) {

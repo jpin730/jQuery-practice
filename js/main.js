@@ -1,6 +1,10 @@
 'use strict';
 
-if (!window.location.href.includes('about')) {
+if (!window.location.href.includes('.html')) {
+  window.location.href = '/index.html';
+}
+
+if (window.location.href.includes('index.html')) {
   $(document).ready(function () {
     $('.bxslider').bxSlider({
       mode: 'fade',
@@ -103,6 +107,6 @@ $('.login form').submit(function (event) {
   whoamiParr.html(message).css('textAlign', 'center');
 });
 
-if (window.location.href.includes('about')) {
+if (window.location.href.includes('about.html')) {
   $('.accordion').accordion();
 }

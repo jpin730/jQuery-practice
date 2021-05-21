@@ -68,14 +68,36 @@ if (window.location.href.includes('index.html')) {
 
 const theme = $('#theme');
 
+const saveTheme = function (themeName) {
+  localStorage.setItem('currentTheme', themeName);
+};
+
+const setTheme = function (themeName) {
+  theme.attr('href', `css/${themeName}.css`);
+  saveTheme(themeName);
+};
+
+const storedTheme = localStorage.getItem('currentTheme');
+if (
+  storedTheme === 'red' ||
+  storedTheme === 'green' ||
+  storedTheme === 'blue'
+) {
+  setTheme(storedTheme);
+} else {
+  setTheme('green');
+}
+
 $('.to-red').click(function () {
-  theme.attr('href', 'css/red.css');
+  setTheme('red');
 });
+
 $('.to-green').click(function () {
-  theme.attr('href', 'css/green.css');
+  setTheme('green');
 });
+
 $('.to-blue').click(function () {
-  theme.attr('href', 'css/blue.css');
+  setTheme('blue');
 });
 
 const goToTop = $('.go-to-top');

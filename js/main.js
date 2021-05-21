@@ -119,3 +119,15 @@ if (window.location.href.includes('clock.html')) {
     $('.clock').html(time);
   }, 1000);
 }
+
+if (window.location.href.includes('contact.html')) {
+  $("form input[name='birth-date']").datepicker({
+    dateFormat: 'mm/dd/yy',
+  });
+
+  $.validate({
+    lang: 'en',
+    errorMessagePosition: 'top',
+    scrollToTopOnError: true,
+  });
+}

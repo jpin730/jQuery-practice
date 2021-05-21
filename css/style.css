@@ -153,19 +153,22 @@ body {
   text-align: justify;
 }
 
-.login h2 {
+form h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
 
-.login label {
+form label {
+  cursor: pointer;
   font-size: 0.95rem;
   display: block;
   width: 100%;
   margin-bottom: 0.25em;
 }
 
-.login input {
+form input,
+form select {
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   display: block;
   width: 100%;
@@ -173,13 +176,15 @@ body {
   border: 1px solid var(--light);
   margin-bottom: 1em;
   outline: none;
+  background: none;
 }
 
-.login input:focus {
+form input:focus,
+form select:focus {
   border: 1px solid var(--main);
 }
 
-.login button {
+form button {
   font-weight: 700;
   color: var(--white);
   font-size: 1rem;
@@ -192,8 +197,24 @@ body {
   transition: background-color 300ms;
 }
 
-.login button:hover {
+form button:hover {
   background-color: var(--dark);
+}
+
+form .form-error {
+  font-size: 0.95rem;
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+  color: var(--red);
+}
+
+form .form-error.alert strong,
+form .form-error.alert li {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.25em;
+  list-style: none;
 }
 
 .footer {
